@@ -39,11 +39,11 @@ public class CCuenta {
         setSaldo(getSaldo() - cantidad);
     }
 
-	private double getSaldo() {
+	protected double getSaldo() {
 		return saldo;
 	}
 
-	private void setSaldo(double saldo) {
+	protected void setSaldo(double saldo) {
 		this.saldo = saldo;
 	}
 
