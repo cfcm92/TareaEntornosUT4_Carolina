@@ -18,16 +18,31 @@ public class CCuenta {
     private double saldo;
     private double tipoInterés;
 
+    /**
+     * Constructor por defecto vacío
+     */
     public CCuenta()
     {
     }
 
+    /**
+     * Constructor con parámetros de la clase CCuenta
+     * @param nom nombre del titular de la cuenta
+     * @param cue número de cuenta bancaria
+     * @param sal saldo con el que se inicializa la cuenta
+     * @param tipo tipo de interés que va a generar la cuenta
+     */
     public CCuenta(String nom, String cue, double sal, double tipo)
     {
         setNombre(nom);
         setCuenta(cue);
         setSaldo(sal);
     }
+    
+    /**
+     * Método para obtener el saldo de la cuenta
+     * @return saldo de la cuenta
+     */
 
     public double estado()
     {
